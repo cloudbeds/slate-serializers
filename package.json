@@ -1,6 +1,6 @@
 {
   "name": "slate-serializers",
-  "version": "0.0.25",
+  "version": "0.0.30",
   "description": "Serialize Slate JSON objects to HTML and vice versa. Define rules to modify the end result.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -58,7 +58,7 @@
     "domhandler": "^5.0.3",
     "domutils": "^3.0.1",
     "html-entities": "^2.3.3",
-    "htmlparser2": "^8.0.1",
+    "htmlparser2": "~7.2.0",
     "slate": "^0.88.1",
     "slate-hyperscript": "^0.77.0"
   }
