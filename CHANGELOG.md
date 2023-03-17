@@ -1,3 +1,48 @@
+# 1.0.0 (2023-03-17)
+
+
+### Bug Fixes
+
+* **ci:** artifact path ([f7c4add](https://github.com/cloudbeds/slate-serializers/commit/f7c4add113e9a6d493a79d5de1a68e96b4f5a54f))
+* error when parsing empty or self-closing tags ([#23](https://github.com/cloudbeds/slate-serializers/issues/23)) ([8adb74b](https://github.com/cloudbeds/slate-serializers/commit/8adb74b238c501d4f64c4274a710c6aa9cec0f26))
+* **html-to-slate:** prevent adding excessive line break when <br> is happen to be within text nodes ([5762c61](https://github.com/cloudbeds/slate-serializers/commit/5762c61fb19cc9c4157ddaca40ea07f3bd0d1f78))
+* **html-to-slate:** trim whitespace that precedes a block element ([a2eb943](https://github.com/cloudbeds/slate-serializers/commit/a2eb94325cc44febcba271760d7c9d6e903e9f4f))
+* **html-to-slate:** trim whitespace that precedes a block element ([#38](https://github.com/cloudbeds/slate-serializers/issues/38)) ([74f3d24](https://github.com/cloudbeds/slate-serializers/commit/74f3d24ce7dda16279b349502626dec481bdb21c))
+* **htmltoslate:** ensure empty children have a text node ([#21](https://github.com/cloudbeds/slate-serializers/issues/21)) ([59ac5b9](https://github.com/cloudbeds/slate-serializers/commit/59ac5b9e61a1ad3018c8013bbfbad4a20b86b43b))
+* **htmltoslate:** htmlToSlate function add return type ([#43](https://github.com/cloudbeds/slate-serializers/issues/43)) ([#45](https://github.com/cloudbeds/slate-serializers/issues/45)) ([9ee52a5](https://github.com/cloudbeds/slate-serializers/commit/9ee52a584e3f374b26ea0bb1ba6df3d7b5b25fb4))
+* **htmltoslate:** shadowed variable ([#42](https://github.com/cloudbeds/slate-serializers/issues/42)) ([aa7ee16](https://github.com/cloudbeds/slate-serializers/commit/aa7ee163ae5099e6f33d69060ff373d581c443ea))
+* **package.json:** downgrade htmlparser2 for Webpack 4 compatibility ([#49](https://github.com/cloudbeds/slate-serializers/issues/49)) ([47bc3b0](https://github.com/cloudbeds/slate-serializers/commit/47bc3b05d20a0671ac10147f9dab67ac14b9c549))
+* **readme.md:** apply corrections ([#11](https://github.com/cloudbeds/slate-serializers/issues/11)) ([e12d933](https://github.com/cloudbeds/slate-serializers/commit/e12d9339c2bac12cb781109ea61372c73b2d962b))
+* **slatetodom:** parseDocument argument type ([#50](https://github.com/cloudbeds/slate-serializers/issues/50)) ([db8d566](https://github.com/cloudbeds/slate-serializers/commit/db8d566a5fe2a3a64dab05f89de0c86b1e65ecd6))
+* **slatetohtml:** do not add an empty style attribute ([#20](https://github.com/cloudbeds/slate-serializers/issues/20)) ([a303806](https://github.com/cloudbeds/slate-serializers/commit/a303806e2baaf99536a716dca1763e2ba8270c49))
+* **slatetohtml:** do not escape html entities ([#16](https://github.com/cloudbeds/slate-serializers/issues/16)) ([4d25706](https://github.com/cloudbeds/slate-serializers/commit/4d2570634eeff3b04629c49e65009385249a99a7))
+* **slatetohtml:** return an empty document if no Slate object ([#51](https://github.com/cloudbeds/slate-serializers/issues/51)) ([42a1e7a](https://github.com/cloudbeds/slate-serializers/commit/42a1e7a3646a1cb4d94801d842fbe872d9d356b8))
+* **src:** folder capitalisation ([#47](https://github.com/cloudbeds/slate-serializers/issues/47)) ([90a61e4](https://github.com/cloudbeds/slate-serializers/commit/90a61e44d1801cd71d45d694885c29339ad32a3f))
+* **src:** remove unused directories ([#48](https://github.com/cloudbeds/slate-serializers/issues/48)) ([4717128](https://github.com/cloudbeds/slate-serializers/commit/4717128bb2e1478e90b25f2592edd6e60a306eb2))
+* **update-html:** import ([2ae2af8](https://github.com/cloudbeds/slate-serializers/commit/2ae2af8503703661abaae5378b5d3ee01613e917))
+
+
+### Features
+
+* ***to*:** handle html entities appropriately ([#22](https://github.com/cloudbeds/slate-serializers/issues/22)) ([2cd5ce1](https://github.com/cloudbeds/slate-serializers/commit/2cd5ce1b52c2c974c139dbb38a297ce31231283b))
+* ***to*:** html manipulation capabilities ([#19](https://github.com/cloudbeds/slate-serializers/issues/19)) ([341cf32](https://github.com/cloudbeds/slate-serializers/commit/341cf325a763cf6066311bd183dbbf0db5d580bf))
+* **config:** extract and make customizable ([#10](https://github.com/cloudbeds/slate-serializers/issues/10)) ([2ea995e](https://github.com/cloudbeds/slate-serializers/commit/2ea995e2ccee3b98ae9b4b98c06ccef71594bab8))
+* **defaulttag:** replace enforceTopLevelPTags ([#13](https://github.com/cloudbeds/slate-serializers/issues/13)) ([e144e03](https://github.com/cloudbeds/slate-serializers/commit/e144e03e02001f90454deb76a0b71acf2261ac66))
+* **htmltoslate:** process whitespace depending on context ([#18](https://github.com/cloudbeds/slate-serializers/issues/18)) ([0c9feac](https://github.com/cloudbeds/slate-serializers/commit/0c9feac90e460573859bed678c2428c125b49556))
+* **htmltoslate:** support line breaks ([#6](https://github.com/cloudbeds/slate-serializers/issues/6)) ([fe98bfb](https://github.com/cloudbeds/slate-serializers/commit/fe98bfbc24bd4ff9025f70b08f16f8994ac9247f))
+* **serializers:** htmlToSlate and slateToHtml ([#1](https://github.com/cloudbeds/slate-serializers/issues/1)) ([bc58250](https://github.com/cloudbeds/slate-serializers/commit/bc5825060f40723e9fb575dc97ba7b132f9710a4))
+* **serializers:** support more HTML tags ([#2](https://github.com/cloudbeds/slate-serializers/issues/2)) ([84a09a8](https://github.com/cloudbeds/slate-serializers/commit/84a09a8ba81e4e69131cf45b442dda4c3b0397f7))
+* **slatetohtml:** control html entity encoding ([#17](https://github.com/cloudbeds/slate-serializers/issues/17)) ([1f660b3](https://github.com/cloudbeds/slate-serializers/commit/1f660b3bf172bab29168fe52ff103f3b0d00d70c))
+* **slatetohtml:** convert line breaks to br tags ([#33](https://github.com/cloudbeds/slate-serializers/issues/33)) ([fe080fb](https://github.com/cloudbeds/slate-serializers/commit/fe080fbde907f01a0e3a389ddc82bbe13cb4581d))
+* **slatetohtml:** improve text tag support ([#3](https://github.com/cloudbeds/slate-serializers/issues/3)) ([44d45b6](https://github.com/cloudbeds/slate-serializers/commit/44d45b682ef34bd7ff87a1c6605565fe897f0afd))
+* **slatetohtml:** support newtab links ([#5](https://github.com/cloudbeds/slate-serializers/issues/5)) ([ef8d004](https://github.com/cloudbeds/slate-serializers/commit/ef8d004a101f69e7999c59dab4f5f68b3dd5435d))
+* support custom attributes ([#7](https://github.com/cloudbeds/slate-serializers/issues/7)) ([2192b0e](https://github.com/cloudbeds/slate-serializers/commit/2192b0ea5c972d12901ac2ebfc4e35120408f46e))
+
+
+### Reverts
+
+* Revert "refactor(config): extend all config from a sensible default (#26)" (#27) ([e253c4e](https://github.com/cloudbeds/slate-serializers/commit/e253c4e66c1adeac872052cbb6435892b25c19aa)), closes [#26](https://github.com/cloudbeds/slate-serializers/issues/26) [#27](https://github.com/cloudbeds/slate-serializers/issues/27)
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
