@@ -1,6 +1,6 @@
 {
   "name": "@cloudbeds/slate-serializers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Serialize Slate JSON objects to HTML and vice versa. Define rules to modify the end result.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

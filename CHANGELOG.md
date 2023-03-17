@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/cloudbeds/slate-serializers/compare/v1.0.0...v1.0.1) (2023-03-17)
+
+
+### Bug Fixes
+
+* ci trigger ([83aeb8a](https://github.com/cloudbeds/slate-serializers/commit/83aeb8a22d7d654f38abe13a78639ef71599aba7))
+
 # 1.0.0 (2023-03-17)
 
 
