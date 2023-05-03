@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/cloudbeds/slate-serializers/compare/v1.0.1...v1.1.0) (2023-05-03)
+
+
+### Bug Fixes
+
+* lint and format ([#58](https://github.com/cloudbeds/slate-serializers/issues/58)) ([9ab446d](https://github.com/cloudbeds/slate-serializers/commit/9ab446da983b324976499693f49398871dd80ed1))
+
+
+### Features
+
+* **slatetodom:** add encodeBreakingEntities option ([#57](https://github.com/cloudbeds/slate-serializers/issues/57)) ([e9040fa](https://github.com/cloudbeds/slate-serializers/commit/e9040fa2074e2a7229d070ad831226f58e169780))
+
 ## [1.0.1](https://github.com/cloudbeds/slate-serializers/compare/v1.0.0...v1.0.1) (2023-03-17)
 
 
