@@ -45,19 +45,19 @@ const deserialize = ({
 
   const children = currentEl.childNodes
     ? currentEl.childNodes
-        .map((node, i) =>
-          deserialize({
-            el: node,
-            config,
-            index: i,
-            childrenLength: currentEl.childNodes.length,
-            context: childrenContext,
-          }),
-        )
-        .filter((element) => element)
-        .filter((element) => !isSlateDeadEnd(element))
-        .map((element) => addTextNodeToEmptyChildren(element))
-        .flat()
+      .map((node, i) =>
+        deserialize({
+          el: node,
+          config,
+          index: i,
+          childrenLength: currentEl.childNodes.length,
+          context: childrenContext,
+        }),
+      )
+      .filter((element) => element)
+      .filter((element) => !isSlateDeadEnd(element))
+      .map((element) => addTextNodeToEmptyChildren(element))
+      .flat()
     : []
 
   if (getName(currentEl) === 'body') {
@@ -66,19 +66,30 @@ const deserialize = ({
 
   if (config.elementTags[nodeName]) {
     let attrs: any = config.elementTags[nodeName](currentEl)
-    
+
     if (config.elementAttributeTransform) {
       attrs = {
         ...attrs,
         ...config.elementAttributeTransform({ el: currentEl }),
       }
     }
+    // elementAttributeMap is a convenient config for making changes to all elements
+    const style = getNested(config, 'elementStyleMap')
+    if (style) {
+      Object.keys(style).forEach((slateKey) => {
+        const cssProperty = style[slateKey]
+        const cssValue = extractCssFromStyle(currentEl, cssProperty)
+        if (cssValue) {
+          attrs[slateKey] = cssValue
+        }
+      })
+    }
 
     return jsx('element', attrs, children)
   }
 
   if (config.textTags[nodeName] || el.type === ElementType.Text) {
-    const attrs = gatherTextMarkAttributes({ el: currentEl,config })
+    const attrs = gatherTextMarkAttributes({ el: currentEl, config })
     const text = processTextValue({
       text: textContent(el as Element),
       context: childrenContext as Context,

@@ -1,12 +1,26 @@
 {
-  "name": "@slate-serializers/source",
+  "name": "@cloudbeds/slate-serializers",
+  "description": "Serialize Slate JSON objects to HTML and vice versa. Define rules to modify the end result.",
   "version": "2.1.0",
-  "license": "MIT",
   "scripts": {
     "test": "nx run-many --all --target=test",
     "build": "nx run-many --all --target=build",
     "publish": "nx deploy dom && nx deploy html && nx deploy react && nx deploy utilities && nx deploy template && nx deploy slate-serializers",
     "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudbeds/slate-serializers.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "private": true,
   "dependencies": {
@@ -26,6 +40,13 @@
     "ulid": "^2.3.0"
   },
   "devDependencies": {
+    "@types/html-escaper": "^3.0.0",
+    "commitizen": "^4.3.0",
+    "css-select": "^5.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.5.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "@babel/preset-react": "^7.14.5",
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",

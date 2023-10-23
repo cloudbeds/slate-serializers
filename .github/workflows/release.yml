@@ -1,0 +1,13 @@
+name: Build and publish NPM package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    uses: cloudbeds/workflows/.github/workflows/npm-test-build-release.yml@main
+    secrets: inherit
+    with:
+      artifactPath: lib
